@@ -1,0 +1,15 @@
+Nome: Ana Flávia Regis Macêdo
+
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead.git
+cd .\curso-branchs-ifrn-ead\
+git add .
+git commit -m "Criação do arquivo texto.txt"
+git checkout -b feature-1
+git add .
+git commit -m "Alteração do arquivo texto.txt na branch feature-1"
+git checkout main
+git add .
+git commit -m "Alteração do arquivo texto.txt na branch main"
+git merge feature-1 -m "Merge feature-1 na main"
+git commit -am "Resolução de conflitos"
+git checkout -b add-comandos
